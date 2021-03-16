@@ -1,0 +1,18 @@
+{
+  "name": "umusic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nondanee/unblockneteasemusic": "^0.25.3",
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "long": "^4.0.0",
+    "url": "^0.11.0"
+  }
+}
