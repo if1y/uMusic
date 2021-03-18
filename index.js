@@ -28,7 +28,7 @@ app.get('/getSong', function(res, rep) {
 		* @return {Promise<Object>}
 		*/
 		//match(37251353, ['qq', 'kuwo', 'migu']).then(return console.log)
-		match(res.query.songid, ['qq', 'kuwo', 'migu']).then(function (value) {
+		match(parseInt(res.query.songid), ['qq', 'kuwo', 'migu']).then(function (value) {
 			rep.send(value);
 		})
 	} else {
