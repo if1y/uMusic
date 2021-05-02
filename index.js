@@ -27,7 +27,7 @@ app.get('/getSong', function(res, rep) {
 		* @param {Array<String>||undefined} source support qq, xiami, baidu, kugou, kuwo, migu, joox
 		* @return {Promise<Object>}
 		*/
-		match(parseInt(res.query.songid), ['kuwo','kugou']).then(function (value) {
+		match(parseInt(res.query.songid), ['qq', 'migu', 'joox', 'xiaomi', 'baidu', 'kuwo', 'kugou']).then(function (value) {
 			rep.send(value);
 		})
 	} else {
